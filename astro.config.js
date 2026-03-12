@@ -31,5 +31,9 @@ export default defineConfig({
       __VUE_PROD_DEVTOOLS__: JSON.stringify(false),
       __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: JSON.stringify(false),
     },
-  }
+  },
+
+  server: {
+    host: true,
+  },
 });
