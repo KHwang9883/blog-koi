@@ -1,6 +1,7 @@
 ---
 import { type CollectionEntry, getCollection } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
+import Waline from '../../components/Waline.astro';
 import {filterPosts} from "../../utils/misc";
 
 export async function getStaticPaths() {
@@ -21,4 +22,5 @@ const { Content } = await post.render();
 
 <BlogPost {...post.data}>
 	<Content />
+	<Waline slot="comment" path={`/${post.slug}/`} />
 </BlogPost>

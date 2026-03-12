@@ -1,35 +1,35 @@
 // 引入的图片对象，用于 Astro 的 <Image> 组件
 // 详见 https://docs.astro.build/en/guides/images/#image--astroassets
-import authorAvatarImage from "./assets/akkarin.jpg";
-import headerImageDay from "./assets/header_day.jpg";
-import headerImageNight from "./assets/header_night.webp";
+import authorAvatarImage from "./assets/avatar.webp";
+import headerImageDay from "./assets/header-day.svg";
+import headerImageNight from "./assets/header-night.svg";
 
 // 网站的 <html> 语言标签
-export const SITE_LANGUAGE = "en";
+export const SITE_LANGUAGE = "zh-hans-CN";
 
 // 网站名称
-export const SITE_TITLE = 'Astro Koi';
+export const SITE_TITLE = 'Kevin Huang 的小站';
 
 // 网站的副标题
-export const SITE_DESCRIPTION = '又一个基于 Astro 的博客站点';
+export const SITE_DESCRIPTION = '行稳致远，创造价值';
 
 // 博主的昵称
-export const SITE_AUTHOR_NAME = "tcdw";
+export const SITE_AUTHOR_NAME = "Kevin Huang";
 
 // 博主的头像
 export const SITE_AUTHOR_AVATAR = authorAvatarImage;
 
 // 网站版权起始年份
-export const SITE_COPYRIGHT_YEAR_START = "2012";
+export const SITE_COPYRIGHT_YEAR_START = "2019";
 
 // 网站头部导航菜单
 export const SITE_MENU: { title: string, href: string, target: string }[] = [
     { title: "首页", href: "./", target: "" },
-    { title: "博客", href: "./blog/", target: "" },
-    { title: "关于", href: "./page/about/", target: "" },
     { title: "归档", href: "./page/archive/", target: "" },
-    { title: "链接", href: "./page/links/", target: "" },
-    { title: "外部链接", href: "https://www.example.com", target: "_blank" }
+    { title: "友链", href: "./page/links/", target: "" },
+    { title: "联络", href: "./page/social/", target: "" },
+    { title: "设备", href: "./post/my-devices/", target: "" },
+    { title: "导航", href: "https://nav.kevinh.wang/", target: "_blank" }
 ]
 
 // 网站横幅背景图片（明亮主题）
@@ -39,4 +39,4 @@ export const SITE_HEAD_IMAGE_DAY = headerImageDay;
 export const SITE_HEAD_IMAGE_NIGHT = headerImageNight;
 
 // 一页展示的博文数量
-export const BLOG_PAGINATION_SIZE = 6;
+export const BLOG_PAGINATION_SIZE = 10;

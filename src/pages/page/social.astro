@@ -1,0 +1,15 @@
+---
+import Layout from '../../layouts/BlogPage.astro';
+import MarkdownBody from "../../components/MarkdownBody.astro";
+
+import * as markdownData from "./_social.md";
+---
+
+<Layout
+	title="联系方式"
+	description=""
+>
+	<MarkdownBody class="mt-6">
+		<markdownData.Content />
+	</MarkdownBody>
+</Layout>

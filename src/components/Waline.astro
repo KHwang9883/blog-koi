@@ -1,0 +1,42 @@
+---
+interface Props {
+  path: string;
+}
+
+const { path } = Astro.props;
+const serverURL = import.meta.env.PUBLIC_WALINE_SERVER_URL;
+---
+
+{serverURL && (
+  <>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+    <div id="waline" data-path={path} class="mt-8"></div>
+  </>
+)}
+
+<style is:global>
+  .wl-reply-to {
+    display: none !important;
+  }
+</style>
+
+<script>
+  const serverURL = import.meta.env.PUBLIC_WALINE_SERVER_URL;
+
+  if (serverURL) {
+    const walineContainer = document.querySelector('#waline');
+
+    if (walineContainer) {
+      const path = walineContainer.getAttribute('data-path') || window.location.pathname;
+
+      const { init } = await import('@waline/client');
+
+      init({
+        el: '#waline',
+        path: path,
+        serverURL: serverURL,
+        lang: 'zh-CN',
+      });
+    }
+  }
+</script>

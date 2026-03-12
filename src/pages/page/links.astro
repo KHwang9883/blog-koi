@@ -4,24 +4,26 @@ import Friend from "../../components/friend/Friend.astro";
 import FriendList from "../../components/friend/FriendList.astro";
 import FriendCategoryTitle from "../../components/friend/FriendCategoryTitle.astro";
 import MarkdownBody from "../../components/MarkdownBody.astro";
+import Waline from "../../components/Waline.astro";
 
 import * as markdownData from "./_links.md";
 ---
 
-<BlogPage title="链接" description="来看看我的小伙伴们吧！">
-    <FriendCategoryTitle>链接分类</FriendCategoryTitle>
+<BlogPage title="友链" description="来看看我的小伙伴们吧！">
+    <FriendCategoryTitle>朋友们</FriendCategoryTitle>
+    <FriendList>
+        <Friend url="https://blog.chyk.ink/" name="風雪城" description="浩繁星空下的一场稚嫩的梦" avatarUrl="https://q1.qlogo.cn/g?b=qq&nk=3526514925&s=640" />
+        <Friend url="https://das-blog.pages.dev/" name="das's Blog" description="Moonstruck Blossom" avatarUrl="https://das-blog.pages.dev/img/avatar.png" />
+        <Friend url="https://zh.wsw233.com/" name="WSW 的小屋" description="WSW 的个人空间" avatarUrl="/img/friends/wsw.jpg" />
+    </FriendList>
+    <!--<FriendCategoryTitle>链接分类之二</FriendCategoryTitle>
     <FriendList>
         <Friend url="https://www.tcdw.net" name="吐槽大王部落格" description="本 Astro 博客主题的作者" avatarUrl="https://secure.gravatar.com/avatar/70ae2023afad30dae905344325cece8f?s=140" />
         <Friend url="https://example.com" name="测试链接" description="这是一个测试链接" />
         <Friend url="https://example.com" name="测试链接" description="这是一个测试链接" />
-    </FriendList>
-    <FriendCategoryTitle>链接分类之二</FriendCategoryTitle>
-    <FriendList>
-        <Friend url="https://www.tcdw.net" name="吐槽大王部落格" description="本 Astro 博客主题的作者" avatarUrl="https://secure.gravatar.com/avatar/70ae2023afad30dae905344325cece8f?s=140" />
-        <Friend url="https://example.com" name="测试链接" description="这是一个测试链接" />
-        <Friend url="https://example.com" name="测试链接" description="这是一个测试链接" />
-    </FriendList>
+    </FriendList>-->
     <MarkdownBody class="mt-6">
         <markdownData.Content />
     </MarkdownBody>
+    <Waline slot="comment" path="/links/" />
 </BlogPage>
