@@ -3,7 +3,7 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 @theme {
-    --font-sans: ChillRoundF, -apple-system, "Microsoft YaHei", sans-serif;
+    --font-sans: ChillRoundF, Helvetica, Arial, -apple-system, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 
     --color-primary-50: #edfbff;
     --color-primary-100: #d6f5ff;
