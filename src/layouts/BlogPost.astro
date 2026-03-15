@@ -7,10 +7,12 @@ import FormattedDate from '../components/FormattedDate.astro';
 import BaseLayout from "./BaseLayout.astro";
 import Container from "../components/Container.astro";
 import MarkdownBody from "../components/MarkdownBody.astro";
+import { SITE_AUTHOR_NAME, SITE_TITLE } from '../consts';
 
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const pageUrl = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : Astro.url.href;
 ---
 
 <BaseLayout>
@@ -22,12 +24,17 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				<h2 class="text-3xl font-bold leading-normal">{title}</h2>
 				<div class="mt-4">
 					<FormattedDate class="opacity-60" date={pubDate} />
-					{updatedDate && <span class="opacity-60">(Last updated on <FormattedDate date={pubDate}/>)</span>}
+					{updatedDate && <span class="opacity-60">(Last updated on <FormattedDate date={updatedDate}/>)</span>}
 				</div>
 				<MarkdownBody class="mt-6">
 					<slot />
 				</MarkdownBody>
 			</article>
+		</div>
+		<div class="mb-8 p-4 bg-gray-50 dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-800 text-sm text-gray-600 dark:text-gray-400">
+			<p class="mb-2">文章作者：{SITE_AUTHOR_NAME}</p>
+			<p class="mb-2">文章链接：<a href={pageUrl} class="text-accent-600 dark:text-accent-400 hover:underline break-all">{pageUrl}</a></p>
+			<p>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer" class="text-accent-600 dark:text-accent-400 hover:underline">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href={Astro.site} class="text-accent-600 dark:text-accent-400 hover:underline">{SITE_TITLE}</a>！</p>
 		</div>
 		<slot name="comment" />
 	</Container>
