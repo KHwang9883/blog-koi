@@ -12,5 +12,5 @@ const {date, class: className = ""} = Astro.props;
         year: 'numeric',
         month: 'long',
         day: 'numeric',
-    })
+    }).replace(/(\d+)/g, ' $1 ').trim()
 }</time>
