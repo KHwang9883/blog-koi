@@ -1,10 +1,11 @@
+import type { APIContext } from 'astro';
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { filterPosts } from "@/utils/misc";
 import { marked } from 'marked';
 
-function generateExcerpt(markdown, maxLength = 200) {
+function generateExcerpt(markdown: string, maxLength: number = 200): string {
 	const text = markdown
 		.replace(/```[\s\S]*?```/g, '')
 		.replace(/`[^`]+`/g, '')
@@ -18,11 +19,11 @@ function generateExcerpt(markdown, maxLength = 200) {
 	return text.substring(0, maxLength).trim() + '...';
 }
 
-function formatRssDate(date) {
+function formatRssDate(date: Date): string {
 	return date.toUTCString();
 }
 
-export async function GET(context) {
+export async function GET(context: APIContext) {
 	const posts = filterPosts(await getCollection('blog'), {
 		filterDraft: true,
 		filterUnlisted: true,
@@ -33,16 +34,16 @@ export async function GET(context) {
 	return rss({
 		title: SITE_TITLE,
 		description: SITE_DESCRIPTION,
-		site: context.site,
+		site: context.site!,
 		customData: `<pubDate>${formatRssDate(lastBuildDate)}</pubDate>`,
 		items: await Promise.all(posts.map(async (post) => {
-			const content = await marked.parse(post.body);
-			const description = post.data.description || generateExcerpt(post.body);
+			const content = await marked.parse(post.body!);
+			const description = post.data.description || generateExcerpt(post.body!);
 
 			return {
 				title: post.data.title,
 				pubDate: post.data.pubDate,
-				link: `/post/${post.slug}/`,
+				link: `/post/${post.id}/`,
 				description: description,
 				content: content,
 			};
