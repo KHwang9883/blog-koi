@@ -15,7 +15,7 @@ pubDate: '2022-09-19'
 
 时间到了 2011 年，随着国产平板逐渐有了规模，以瑞芯微、全志、晶晨、炬力为代表的芯片厂商推出了一系列 Android 平板方案，搭载瑞芯微 RK2918、全志 A10 等单核芯片的 Android 平板面世。我本人购买过一款，原道 N12 豪华版，虽然本体已经没了，但我很清楚记得它的配置，都写在包装上面了，这里我再补充几条：
 
-<img width="480" src="/img/in-post/n12.webp" />
+<img src="/img/in-post/n12.webp" />
 
 1. 这机子可以从 Android 2.3 一路升到 4.1，甚至贴吧上有人做了 Android 4.2 的刷机包。当年的平板都是通过量产工具线刷升级系统，会强制清除数据，不能 OTA。
 2. RK2918 的 GPU 并不是我们熟悉的 Mali 或者苹果同款 PowerVR，而是叫 Vivante GC800。这款 GPU 过于小众，兼容性问题比较明显。当年的 3D 大型游戏都是分不同 GPU 的数据包，Vivante 的 GPU 用适配 NVIDIA Tegra 处理器的游戏材质包运行相对流畅。（后来瑞芯微的双核 RK3066 改用 Mali-400 MP4，一跃成为最强国产双核）
@@ -27,11 +27,11 @@ pubDate: '2022-09-19'
 
 2012 年，苹果发布了 Retina 显示屏的第三代 iPad。仅过半年多，就有国产平板跟进了这一噱头，又是原道，原道 N90 双擎 FHD 是第一款 2048x1536 视网膜屏幕的 Android 平板。之所以称之为噱头，是因为 2012 年的国产双核芯片没有针对视网膜屏幕优化，这款极为“超前”的产品流畅度一般。
 
-<img width="480" src="/img/in-post/vido-n90-fhd-1.webp" />
+<img src="/img/in-post/vido-n90-fhd-1.webp" />
 
 可以看到这个阶段开始国产平板不再傻大黑粗，开始模仿苹果（虽然是模仿了，但没完全模仿）。
 
-<img width="480" src="/img/in-post/vido-n90-fhd-2.webp" />
+<img src="/img/in-post/vido-n90-fhd-2.webp" />
 
 双核时期的国产平板处理器主要分为两大阵营，瑞芯微 RK3066 阵营以及晶晨 AML8726-MX 阵营。前者之前也说过，是当年国产最强双核，而后者除平板电脑外，也被小米盒子等网络机顶盒采用。
 
@@ -39,9 +39,9 @@ pubDate: '2022-09-19'
 
 全志 A31 与瑞芯微 RK3188 总算可以流畅带动视网膜屏幕了，昂达、台电、原道等厂商也推出了数款 9.7 英寸视网膜平板，各家都号称自己是最顶级的（当时没有新广告法，这种宣传并不违法）。
 
-<img width="480" src="/img/in-post/onda-v972.webp" />
+<img src="/img/in-post/onda-v972.webp" />
 
-<img width="480" src="/img/in-post/vido-n90-fhdrk.webp" />
+<img src="/img/in-post/vido-n90-fhdrk.webp" />
 
 苹果发布 iPad 4 的同时也发布了 iPad mini，很快国产平板这边也有了类似产品（在此之前市面上都是 8 英寸常规边框的机型）。全志为此也推出了 A31 的阉割版 A31s，把支持的 RAM 容量砍到 1GB（2013 年的千元手机水平），并“优化了功耗”。
 
@@ -51,23 +51,23 @@ pubDate: '2022-09-19'
 
 回到传统 Wi-Fi 平板，晶晨虽然在四核平板芯片的竞争中迟到了，但其四核芯片 Amlogic M802 的规格提升了一个档次——四核 Cortex-A9，最高 2GHz 主频（默认 1.6GHz），Mali-450 MP6 GPU，使得其后来居上，在参数上全面超越了瑞芯微 RK3188。首发这颗芯片的平板是昂达 V975m 四核，可以看到这一阶段的平板已经不只是模仿了苹果，但没完全模仿的程度了，而是可以做到以假乱真。
 
-<img width="480" src="/img/in-post/onda-v975m.webp" />
+<img src="/img/in-post/onda-v975m.webp" />
 
 不过我不记得有第二款 Amlogic M802 的平板，后来小米盒子增强版等电视盒子用上了 M802 的衍生版本——Amlogic S802。M802 规格这么强，为何无人问津？因为搅局者来了，它就是 Intel。
 
 Intel 的 Atom（凌动）芯片最初用于上网本，后来针对移动终端衍生出 Atom Z 系列，联想 K900 手机搭载的就是 Atom Z2580。得益于 Clover Trail 架构强大的单核性能（相对当时的 ARM 而言），仅仅双核的它跑分比肩骁龙 600。不过由于其“高分低能”，导致搭载它的智能手机并不多，于是 Intel 开始补贴南方平板厂商，将 Atom 芯片以极低的价格提供给它们。第一批“英特尔芯”的国产平板采用 Atom Z2580 芯片，后来又有了阉割版 Atom Z2520。众所周知，Android 生态在 X86 架构下存在兼容性问题，这些产品的用户体验只能说差强人意（没用错词）。Intel 也意识到这一点，于是 Bay Trail 架构的 Atom 横空出世，支持 Windows 系统以及与 Android 组成双系统。南方厂商推出的这些英特尔芯国产平板也纷纷将支持 Windows + Android 双系统作为核心卖点，微软还为 9 英寸以下的设备推出免费的 Windows 8.1 with Bing 系统，于是大量 8 英寸甚至 7 英寸的 Windows 平板涌现，而它们大多都采用 Atom Z3735/3736 系列处理器，并都套用了同期 Android 平板的模具，可以看到下图这款平板连标志性的 Windows 徽标键都没有。
 
-<img width="480" src="/img/in-post/onda-v819w.webp" />
+<img src="/img/in-post/onda-v819w.webp" />
 
 同期 ARM 架构的 Android 平板进入了八核时代，全志 A80 凭借 Cortex-A15 + Cortex-A7 大小核架构再次刷新了国产 Android 平板的性能纪录，这是全志平板芯片的巅峰。至于瑞芯微的 RK3288，虽然其 CPU 停留在四核，但采用了当时较新的 Cortex-A17 架构和 Mali-T760 MP4 GPU，也有着不错的性能。Intel 一搅局，全志、瑞芯微的芯片在平板市场的份额显著下降，而 MTK 凭借其通讯技术这一优势在 Android 平板领域占据了一席之地。Intel 芯平板虽然也有 3G 版，但有一部分是借助华为的模块实现的 3G 通信功能（成本更高），另一部分则是采用 Intel 自己的基带。2014 年后期，Intel 发布了全新 Atom 系列，与酷睿一样分为 X3/X5/X7，其中 X3 面向智能手机及通话平板，X5、X7 采用 Cherry Trail 架构，主要面向 Windows 平板。Cherry Trail 架构的性能有不小提升，可以勉强玩玩网游了。平板厂商也开始推出类似 Surface 的二合一设备，平板装上磁吸键盘瞬间变身上网本。这些平板无一例外都使用触点连接键盘，如今一些 Android 平板仍采用这一设计。
 
-<img width="480" src="/img/in-post/teclast-win10.webp" />
+<img src="/img/in-post/teclast-win10.webp" />
 
 Atom 芯平板一时火热的背后是 Intel 的巨额亏损，导致其在 2016 年停止了对平板厂商的补贴政策。此举不仅影响了瑞芯微、全志等方案商，也导致一批南方厂商关门倒闭或转战他行。我们看看瑞芯微、全志这个时候的芯片，与在巅峰时期有实力挑战中高端手机性能的芯片截然不同，全志 A63、A64 以及 RK3368 无一例外都属于中低端水准。值得一提的是全志 A63 居然可以带动 2.5K 屏幕，台电 M8 就是这样的产品；而 RK3368 的性能则相当于联发科 MT6753。
 
-<img width="480" src="/img/in-post/allwinner-soc.webp" />
+<img src="/img/in-post/allwinner-soc.webp" />
 
-<img width="480" src="/img/in-post/rk3368.webp" />
+<img src="/img/in-post/rk3368.webp" />
 
 联发科仍然在为平板电脑供应芯片，在 2017 年，那颗“一核有难九核围观”的 Helio X20 被一众厂商武装到产品中，搭载 Helio X20 的昂达 X20 成为了昂达在平板电脑市场的绝唱。至于原道，其官网早已关闭，通过企查查可以看到其已被列为失信被执行企业，令人唏嘘不已。原道这个品牌遗产后来留给了耳机厂商，虽然我没使用过，但口碑好像还可以。
 

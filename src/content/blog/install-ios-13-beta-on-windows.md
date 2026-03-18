@@ -41,7 +41,7 @@ iOS 13 Developer Beta 2 发布，Apple 这次提供了描述文件，能 OTA 的
 
 最后放几张我的 iPad 更新 iPadOS 13 后的截图。
 
-<img width="800" src="/img/in-post/IMG_0023.webp" />
-<img width="800" src="/img/in-post/IMG_0024.webp" />
-<img width="800" src="/img/in-post/IMG_0020.webp" />
-<img width="800" src="/img/in-post/IMG_0021.webp" />
+<img src="/img/in-post/IMG_0023.webp" />
+<img src="/img/in-post/IMG_0024.webp" />
+<img src="/img/in-post/IMG_0020.webp" />
+<img src="/img/in-post/IMG_0021.webp" />
