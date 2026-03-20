@@ -35,7 +35,7 @@ export async function GET(context: APIContext) {
       id: new URL(`/post/${post.id}/`, siteUrl).toString(),
       link: new URL(`/post/${post.id}/`, siteUrl).toString(),
       description: post.data.description,
-      content: await marked.parse(post.body!),
+      content: await marked.parse(post.body ?? ""),
       author: [
         {
           name: SITE_AUTHOR_NAME,
