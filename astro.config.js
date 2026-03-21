@@ -3,7 +3,6 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import svelte from "@astrojs/svelte";
 import tailwindcss from "@tailwindcss/vite";
-import remarkExcerpt from 'remark-excerpt';
 
 // https://astro.build/config
 export default defineConfig({
@@ -17,7 +16,6 @@ export default defineConfig({
   integrations: [mdx(), sitemap(), svelte()],
 
   markdown: {
-    remarkPlugins: [remarkExcerpt],
     remarkRehype: {
       footnoteLabel: "尾注",
       footnoteBackLabel: '文档内容的尾注',
