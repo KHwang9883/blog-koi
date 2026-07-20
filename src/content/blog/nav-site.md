@@ -9,6 +9,8 @@ Kevin Huang 的导航站收录了我本人常用的一些软件和游戏的官�
 
 <img src="/img/in-post/nav-site.webp" />
 
+2026-07-21，由于 Cloudflare 部署问题，我重新让 AI 用 [Astro](https://astro.build/) 重构了导航站，本次重构保留了 Nuxt 版的界面样式和功能。
+
 导航站灵感/部分应用图标来源于 [狼导 - 音速装机](https://sonic.volf.club/)。
 
 ## 发现有所缺失？
