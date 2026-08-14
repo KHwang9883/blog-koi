@@ -4,7 +4,7 @@ pubDate: '2022-01-27'
 unlisted: true
 ---
 
-- **最后更新**：2026-08-01
+- **最后更新**：2026-08-15
 
 <img src="/img/in-post/device-map.webp" />
 
@@ -23,7 +23,8 @@ unlisted: true
 - **显示器 (副)**: 创维 M271FJ 27" (1920x1080)
 - **键盘**: 狼途 LT104 银轴
 - **鼠标**: 雷蛇 炼狱蝰蛇标准版
-- **OS**: Windows 11 Pro 25H2 (安装于 SSD1)
+- **OS 1**: Windows 11 Pro 25H2 (安装于 SSD1)
+- **OS 2**: CachyOS (安装于 SSD2)
 
 ### ~~网心云 OEC-Turbo~~
 - **状态**: 二手卖出 (闲鱼)
@@ -111,7 +112,7 @@ unlisted: true
 - **ROM**: 128GB UFS 2.2
 - **屏幕**: 6.53" LCD (2340x1080)
 - **电池**: 5000mAh (典型值)
-- **OS**: Android 15 (Xiaomi HyperOS 3)
+- **OS**: Android 16 (Xiaomi HyperOS 3)
 - **备注**: ROM 为第三方移植
 
 ### Redmi K40
