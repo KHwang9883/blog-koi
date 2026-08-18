@@ -4,7 +4,7 @@ pubDate: '2022-01-27'
 unlisted: true
 ---
 
-- **最后更新**：2026-08-15
+- **最后更新**：2026-08-18
 
 <img src="/img/in-post/device-map.webp" />
 
@@ -163,8 +163,8 @@ unlisted: true
 - **电池**: 3500mAh (典型值)
 - **OS**: Android 8.0.0 (EMUI 8.0)
 
-### 红米 Note 4
-- **状态**: 闲置
+### ~~红米 Note 4~~
+- **状态**: 被我妈~~换盆~~置换别的东西了
 - **备注**: 电池衰减严重
 - **购买时间**: 2016-10
 - **SoC**: MediaTek Helio X20
