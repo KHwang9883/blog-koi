@@ -26,6 +26,7 @@ export const SITE_COPYRIGHT_YEAR_START = "2019";
 export const SITE_MENU: { title: string, href: string, target: string }[] = [
     { title: "首页", href: "./", target: "" },
     { title: "归档", href: "./page/archive/", target: "" },
+    { title: "关于", href: "https://about.kevinh.wang/", target: "_blank" },
     { title: "友链", href: "./page/links/", target: "" },
     { title: "设备", href: "./post/my-devices/", target: "" },
     { title: "导航", href: "https://nav.kevinh.wang/", target: "_blank" }
