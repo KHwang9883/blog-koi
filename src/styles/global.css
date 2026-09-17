@@ -64,3 +64,10 @@ body {
         background-color: var(--color-accent-950);
     }
 }
+
+/* 修复：宽表格在移动端撑破容器，改为块级 + 横向滚动 */
+.prose table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
