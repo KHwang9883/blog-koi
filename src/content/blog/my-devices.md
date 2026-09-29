@@ -4,7 +4,7 @@ pubDate: '2022-01-27'
 unlisted: true
 ---
 
-- **最后更新**：2026-09-06
+- **最后更新**：2026-09-30
 
 <img src="/img/in-post/device-map.webp" />
 
@@ -23,7 +23,7 @@ unlisted: true
 - **显示器 (副)**: 创维 M271FJ 27" (1920x1080)
 - **键盘**: 狼途 LT104 银轴
 - **鼠标**: 雷蛇 炼狱蝰蛇标准版
-- **OS 1**: Windows 11 Pro 25H2 (安装于 SSD1)
+- **OS 1**: Windows 11 Pro 26H2 (安装于 SSD1)
 - **OS 2**: CachyOS (安装于 SSD2)
 
 ### ~~网心云 OEC-Turbo~~
