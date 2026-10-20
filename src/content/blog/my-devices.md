@@ -4,7 +4,7 @@ pubDate: '2022-01-27'
 unlisted: true
 ---
 
-- **最后更新**：2026-09-30
+- **最后更新**：2026-10-21
 
 <img src="/img/in-post/device-map.webp" />
 
@@ -112,8 +112,7 @@ unlisted: true
 - **ROM**: 128GB UFS 2.2
 - **屏幕**: 6.53" LCD (2340x1080)
 - **电池**: 5000mAh (典型值)
-- **OS**: Android 16 (Xiaomi HyperOS 3)
-- **备注**: ROM 为第三方移植
+- **OS**: Android 12 (MIUI 14)
 
 ### Redmi K40
 - **状态**: 他人在用
