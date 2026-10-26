@@ -4,7 +4,7 @@ pubDate: '2022-01-27'
 unlisted: true
 ---
 
-- **最后更新**：2026-10-21
+- **最后更新**：2026-10-27
 
 <img src="/img/in-post/device-map.webp" />
 
@@ -24,7 +24,7 @@ unlisted: true
 - **键盘**: 狼途 LT104 银轴
 - **鼠标**: 雷蛇 炼狱蝰蛇标准版
 - **OS 1**: Windows 11 Pro 26H2 (安装于 SSD1)
-- **OS 2**: CachyOS (安装于 SSD2)
+- **OS 2**: Fedora 44 (安装于 SSD2)
 
 ### ~~网心云 OEC-Turbo~~
 - **状态**: 二手卖出 (闲鱼)
@@ -77,7 +77,7 @@ unlisted: true
 - **ROM**: 512GB UFS 4.1
 - **屏幕**: 6.83" AMOLED (2772x1280)
 - **电池**: 9000mAh (典型值)
-- **OS**: Android 16 (Xiaomi HyperOS 3)
+- **OS**: Android 17 (Xiaomi HyperOS 4)
 
 ### ~~荣耀 WIN RT~~
 - **状态**: 回收卖出 (爱回收，换购新机)
