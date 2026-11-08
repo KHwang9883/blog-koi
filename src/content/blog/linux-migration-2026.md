@@ -9,11 +9,11 @@ pubDate: '2026-11-08'
 
 ## 发行版的选择
 
-这点还是比较纠结的。deb 系发行版易上手，有 Ubuntu、Mint、deepin 这种开箱即用的发行版，但它们的问题是，Ubuntu 的 snap 不太受欢迎，Mint 虽然适合 Windows 迁移用户，但底层有些旧，deepin 小问题比较多并且笔者也不太喜欢“非官方”打包的第三方应用。
+这点还是比较纠结的。deb 系发行版易上手，有 Ubuntu、Mint、deepin 这种开箱即用的发行版，但它们的问题是，Ubuntu 的 snap 不太受欢迎，Mint 虽然适合 Windows 迁移用户，但底层有些旧，deepin 小问题比较多并且笔者也不太喜欢“非官方”打包的第三方应用。（至于 Debian 本尊，对一个注重自由软件的开发版，在那上面装专有软件看着比较那啥）
 
 Arch 系发行版有 Arch 本尊、CachyOS、EndeavourOS、Manjaro 等。Manjaro 第一个被排除，因为和 AUR 兼容性的问题；有了 CachyOS 和 EndeavourOS，Arch 原版也不再是我考虑的范围，毕竟前两者开箱即用，预配置了不少东西。CachyOS 和 EndeavourOS 笔者都曾实机安装过，后者比较偏原生 Arch 一些，而前者则针对比较新的硬件重新编译了大部分软件包。于是我就选择了 CachyOS。
 
-我以前安装 Linux 要么是从现有 Windows 磁盘划分出一个小分区安装试用，要么是在一个副硬盘全盘安装。但是这次我将我装有 Windows 的 1TB SSD 的系统迁移到一块 2TB SSD，并在这块 1TB SSD 上全盘安装 CachyOS。我将其定义为主硬盘是因为它插在 CPU 直连的满速 PCIe 接口，而那块 2TB SSD 则是插在比较慢的接口。
+我以前安装 Linux 要么上虚拟机，要么是从现有 Windows 磁盘划分出一个小分区安装试用，或者在一块副硬盘全盘安装。但是这次我将我装有 Windows 的 1TB SSD 的系统迁移到一块 2TB SSD，并在这块 1TB SSD 上全盘安装 CachyOS。我将其定义为主硬盘是因为它插在 CPU 直连的满速 PCIe 接口，而那块 2TB SSD 则是插在比较慢的接口。
 
 桌面环境肯定选择 KDE Plasma，自由度高，对 Windows 用户也友好。GNOME、Cosmic 这种更适合 macOS 用户，而像 Hyprland 这种窗口管理器个人用不太来。
 
@@ -23,17 +23,17 @@ Arch 系发行版有 Arch 本尊、CachyOS、EndeavourOS、Manjaro 等。Manjaro
 
 Arch 系安装软件首选 Flatpak，其次是 AUR。大多数国产软件都通过 AUR 安装，但有一部分更新不太及时（例如 Trae、Motrix）。另外 AUR 也比较挑网络环境。我还是觉得 AUR 不太合我口味，所以之后又更换了发行版（见后文）。
 
-中文输入法选择的是 fcitx5 + Rime（雾凇拼音），更符合微软拼音的使用习惯；对于 KDE Plasma 本身我也做了一些设置改动，毕竟默认配置还是和 Windows 习惯有一些差别。
+中文输入法选择的是 fcitx5 + Rime（[雾凇拼音](https://github.com/iDvel/rime-ice)），更符合微软拼音的使用习惯；对于 KDE Plasma 本身我也做了一些设置改动，毕竟默认配置还是和 Windows 习惯有一些差别。
 
 ## 更换发行版
 
 Arch 系虽然软件包新，但第三方软件官方却极少为 Arch 打包，特别依赖 Flatpak 和 AUR；而 deb 系除了 Debian sid/testing 又没有一个底层较新的发行版。于是我又看了下 Fedora。
 
-在这次以前，笔者对 rpm 系发行版有着不小的刻板印象，以至于上次用这类发行版还是六年前笔者 VPS 上的 CentOS 8。实机安装后，我对它的偏见很快消除了。于是我就打算整体重装，正好 11 月 4 日 Fedora 45 正式发布了。
+在这次以前，笔者对 rpm 系发行版有着不小的刻板印象，以至于上次用这类发行版还是六年前笔者 VPS 上的 [CentOS 8](https://kevinh.wang/post/its-time-to-replace-centos/)。实机安装后，我对它的偏见很快消除了。于是我就打算整体重装，正好 11 月 4 日 Fedora 45 正式发布了。
 
 在重装前我让 OpenCode 把 KDE Plasma、fcitx5 和 VS Codium 的配置打包备份至移动硬盘，想着重装之后能很快恢复，不需要我从头再来。也正如我所愿，装好后 OpenCode 出色地恢复了 Plasma 等的配置，省去了不少繁琐步骤。不过，这么做有一个前提：底层版本要足够新，假如我的迁移目标是 Kubuntu LTS 这种就不行了。
 
-Fedora 默认不附带 NVIDIA 驱动和 H.264/HEVC 编解码，需要添加第三方源并自行安装，这是它为数不多不够“开箱即用”的地方，而除 Debian 外的其他主流发行版则应配尽配。
+Fedora 默认不附带 NVIDIA 驱动和 H.264/HEVC 编解码，需要添加第三方源 RPM Fusion 并自行安装相应软件包，这是它为数不多不够“开箱即用”的地方，而除 Debian 外的其他主流发行版则应配尽配。
 
 另外，不要为 Fedora 自带源配置镜像源，很容易导致检查更新失败。Fedora 默认会自动寻找更快的镜像源的。
 
