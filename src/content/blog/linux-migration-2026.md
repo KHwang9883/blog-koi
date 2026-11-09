@@ -27,11 +27,11 @@ Arch 系安装软件首选 Flatpak，其次是 AUR。大多数国产软件都通
 
 ## 更换发行版
 
-Arch 系虽然软件包新，但第三方软件官方却极少为 Arch 打包，特别依赖 Flatpak 和 AUR；而 deb 系除了 Debian sid/testing 又没有一个底层较新的发行版。于是我又看了下 Fedora。
+Arch 系虽然软件包新，但第三方软件官方却极少为 Arch 打包，特别依赖 Flatpak 和 AUR；而 deb 系除了 Debian sid/testing 又没有一个组件较新的发行版（更新：后来发现一个叫 [AOSC OS](https://aosc.io/) 的发行版，组件相对较新，笔者用虚拟机安装，看着还可以，不过目前就不考虑再迁移了）。于是我又看了下 Fedora。
 
 在这次以前，笔者对 rpm 系发行版有着不小的刻板印象，以至于上次用这类发行版还是六年前笔者 VPS 上的 [CentOS 8](https://kevinh.wang/post/its-time-to-replace-centos/)。实机安装后，我对它的偏见很快消除了。于是我就打算整体重装，正好 11 月 4 日 Fedora 45 正式发布了。
 
-在重装前我让 OpenCode 把 KDE Plasma、fcitx5 和 VS Codium 的配置打包备份至移动硬盘，想着重装之后能很快恢复，不需要我从头再来。也正如我所愿，装好后 OpenCode 出色地恢复了 Plasma 等的配置，省去了不少繁琐步骤。不过，这么做有一个前提：底层版本要足够新，假如我的迁移目标是 Kubuntu LTS 这种就不行了。
+在重装前我让 OpenCode 把 KDE Plasma、fcitx5 和 VS Codium 的配置打包备份至移动硬盘，想着重装之后能很快恢复，不需要我从头再来。也正如我所愿，装好后 OpenCode 出色地恢复了 Plasma 等的配置，省去了不少繁琐步骤。不过，这么做有一个前提：组件版本要足够新，假如我的迁移目标是 Kubuntu LTS 这种就不行了。
 
 Fedora 默认不附带 NVIDIA 驱动和 H.264/HEVC 编解码，需要添加第三方源 RPM Fusion 并自行安装相应软件包，这是它为数不多不够“开箱即用”的地方，而除 Debian 外的其他主流发行版则应配尽配。
 
