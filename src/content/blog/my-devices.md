@@ -4,7 +4,7 @@ pubDate: '2022-01-27'
 unlisted: true
 ---
 
-- **最后更新**：2026-11-05
+- **最后更新**：2026-11-20
 
 <img src="/img/in-post/device-map.webp" />
 
@@ -103,19 +103,8 @@ unlisted: true
 - **电池**: 5500mAh (典型值)
 - **OS**: Android 16 (Xiaomi HyperOS 3)
 
-### Redmi Note 9 5G
-- **状态**: 备用机
-- **购买时间**: 2021-12-27
-- **SoC**: MediaTek 天玑 800U
-- **GPU**: Arm Mali-G57 MC3
-- **RAM**: 8GB LPDDR4x
-- **ROM**: 128GB UFS 2.2
-- **屏幕**: 6.53" LCD (2340x1080)
-- **电池**: 5000mAh (典型值)
-- **OS**: Android 12 (MIUI 14)
-
 ### Redmi K40
-- **状态**: 他人在用
+- **状态**: 备用机
 - **备注**: 更换过电池；屏幕出现绿线
 - **购买时间**: 2021-06-08
 - **SoC**: 高通骁龙 870
@@ -125,6 +114,17 @@ unlisted: true
 - **屏幕**: 6.67" AMOLED (2400x1080)
 - **电池**: 4520mAh (典型值)
 - **OS**: Android 13 (Xiaomi HyperOS 1)
+
+### Redmi Note 9 5G
+- **状态**: 他人在用
+- **购买时间**: 2021-12-27
+- **SoC**: MediaTek 天玑 800U
+- **GPU**: Arm Mali-G57 MC3
+- **RAM**: 8GB LPDDR4x
+- **ROM**: 128GB UFS 2.2
+- **屏幕**: 6.53" LCD (2340x1080)
+- **电池**: 5000mAh (典型值)
+- **OS**: Android 12 (MIUI 14)
 
 ### ~~Redmi K20~~
 - **状态**: 回收卖出 (转转)
