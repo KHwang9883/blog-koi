@@ -4,7 +4,7 @@ pubDate: '2022-01-27'
 unlisted: true
 ---
 
-- **最后更新**：2026-11-20
+- **最后更新**：2026-11-21
 
 <img src="/img/in-post/device-map.webp" />
 
@@ -105,7 +105,7 @@ unlisted: true
 
 ### Redmi K40
 - **状态**: 备用机
-- **备注**: 更换过电池；屏幕出现绿线
+- **备注**: 更换过电池；屏幕出现绿线；数据接口接触不良
 - **购买时间**: 2021-06-08
 - **SoC**: 高通骁龙 870
 - **GPU**: Adreno 650
@@ -208,7 +208,7 @@ unlisted: true
 - **ROM**: 8GB eMMC
 - **屏幕**: 4.7" LCD (1280x720)
 - **电池**: 2265mAh (典型值)
-- **OS**: Android 10 (LineageOS 17.1)
+- **OS**: Debian GNU/Linux 14 (testing)
 
 ### ~~华为 C8816D~~
 - **状态**: 碎屏，下落不明
